@@ -1,0 +1,255 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: 'Cairo';
+    text-decoration: none;
+    color: #3e3e3e;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f0f0f0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+nav {
+    height: 60px;
+    box-shadow: 0px 0px 6px #00000063;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 1%;
+    position: relative;
+    z-index: 2;
+    padding-right: 3%;
+}
+
+nav .logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav .logo i {
+    color: #c049ef;
+
+}
+
+nav .nav-child {
+    display: flex;
+    gap: 30px;
+}
+
+nav .nav-child a {
+    text-transform: capitalize;
+}
+
+nav .nav-child a:hover {
+    text-decoration: underline 1px;
+}
+
+main {
+    display: flex;
+    align-items: flex-start;
+    height: calc(100vh - 60px);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+main aside {
+    box-shadow: 0px 0px 6px #00000063;
+    height: 100%;
+    width: 200px;
+    overflow: hidden;
+}
+
+
+main aside .categories {
+    height: 85%;
+    overflow: auto;
+}
+
+main aside .categories a {
+    display: flex;
+    align-items: center;
+    padding-left: 3vw;
+    text-transform: capitalize;
+    height: 10%;
+    border-bottom: solid 1px #7b7a7a42;
+    font-weight: 500;
+
+}
+
+main aside .categories a:hover {
+    background-color: #c049ef;
+    color: #fff;
+}
+
+main aside .follow {
+    height: 15%;
+    text-align: center;
+    text-transform: capitalize;
+    background-color: #c049ef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-top: solid 3px #555;
+    border-bottom: solid 3px #555;
+    position: relative;
+}
+
+main aside .follow::after {
+    content: " ";
+    position: absolute;
+    right: 0px;
+    top: -3px;
+    height: calc(100% + 6px);
+    background-color: #f0f0f0;
+    width: 4px;
+}
+
+main aside .follow button {
+    background-color: #fff;
+    padding: 5px 30px;
+    border-radius: 50px;
+    font-weight: bold;
+    display: block;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .2s;
+}
+
+main aside .follow button:hover {
+    background-color: #d87efc;
+    color: #fff;
+    letter-spacing: 1.5px;
+    box-shadow: 0px 0px 3px #2d2d2d50;
+}
+
+main aside .follow button i {
+    margin-left: 5px;
+    transition: .2s;
+}
+
+main aside .follow button:hover i {
+    margin-left: 15px;
+}
+
+/* page content */
+
+main .page-content {
+    width: calc(100% - 200px);
+    height: 100%;
+    overflow: auto;
+    padding: 0px 5%;
+}
+
+.introduction .header {
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.introduction .header .logo {
+    text-align: center;
+    font-size: 100px;
+    line-height: 102px;
+    margin-bottom: 30px;
+}
+
+.introduction .header .logo i {
+    color: #c049ef;
+}
+
+.introduction .header .description {
+    font-size: 23px;
+    line-height: 30px;
+    text-align: center;
+    width: 90%;
+    opacity: .8;
+    font-family: system-ui;
+}
+
+.introduction .header .btns {
+    display: flex;
+    gap: 20px;
+    width: fit-content;
+    margin-top: 30px;
+}
+
+.introduction .header .btns a {
+    padding: 5px 20px;
+    border-radius: 3px;
+    text-transform: capitalize;
+    border: solid 2px #c049ef;
+}
+
+.introduction .header .btns a:nth-child(2) {
+    background-color: #c049ef;
+    color: #fff;
+}
+
+.introduction .header .btns a:hover {
+    background-color: #c049ef44;
+    color: #fff;
+    text-shadow: 0px 0px 5px #0000007d;
+    font-weight: bold;
+}
+
+/* fe */
+.features {
+    padding-bottom: 50px;
+}
+
+.features .title {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #9338b6;
+}
+
+.features .features-container{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.features .features-container .feature-box{
+    width: calc((100% - 20px) / 2);
+    text-align: center;
+    box-shadow: 0px 0px 5px #00000050;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.features .features-container .feature-box .feature-title{
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.features .features-container .feature-box .feature-info{
+    font-weight: bold;
+    opacity: .8;
+}

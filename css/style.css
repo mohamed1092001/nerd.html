@@ -213,10 +213,9 @@ main .page-content {
 }
 
 .introduction .header .btns a:hover {
-    background-color: #c049ef44;
+    background-color: #892cae;
     color: #fff;
-    text-shadow: 0px 0px 5px #0000007d;
-    font-weight: bold;
+    transition: .1s;
 }
 
 /* features */
@@ -331,7 +330,8 @@ main .page-content {
     .not-avilable {
         display: flex;
     }
-    *{
+
+    * {
         overflow: hidden;
     }
 }

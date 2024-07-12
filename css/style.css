@@ -169,13 +169,14 @@ main .page-content {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 40px;
 }
 
 .introduction .header .logo {
     text-align: center;
-    font-size: 100px;
+    font-size: 7.8vw;
     line-height: 102px;
-    margin-bottom: 30px;
+
 }
 
 .introduction .header .logo i {
@@ -195,7 +196,6 @@ main .page-content {
     display: flex;
     gap: 20px;
     width: fit-content;
-    margin-top: 30px;
 }
 
 .introduction .header .btns a {
@@ -223,20 +223,22 @@ main .page-content {
 }
 
 .features .title {
-    font-size: 35px;
+    font-size: calc(1vw + 25px);
+    line-height: 37px;
     font-weight: bold;
     text-align: center;
     margin-bottom: 30px;
     color: #9338b6;
+    text-transform: capitalize;
 }
 
-.features .features-container{
+.features .features-container {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
 }
 
-.features .features-container .feature-box{
+.features .features-container .feature-box {
     width: calc((100% - 20px) / 2);
     text-align: center;
     box-shadow: 0px 0px 5px #00000050;
@@ -244,12 +246,72 @@ main .page-content {
     border-radius: 5px;
 }
 
-.features .features-container .feature-box .feature-title{
+.features .features-container .feature-box .feature-title {
     font-weight: bold;
     font-size: 24px;
 }
 
-.features .features-container .feature-box .feature-info{
+.features .features-container .feature-box .feature-info {
     font-weight: bold;
     opacity: .8;
+}
+
+/* how use */
+
+.how-use {
+    padding-bottom: 40px;
+}
+
+.how-use .title {
+    font-size: calc(1vw + 25px);
+    line-height: 37px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #9338b6;
+    text-transform: capitalize;
+}
+
+.how-use ol {
+    list-style-position: inside;
+    width: 100%;
+    border-radius: 5px;
+    margin: auto;
+    padding: 5%;
+    font-size: 20px;
+    box-shadow: 0px 0px 5px #00000050;background-color: #f0f0f0;
+}
+
+/* res */
+
+.not-avilable{
+    z-index: 33333333333333333;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    background-color: #3e3e3e;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: capitalize;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.not-avilable span{
+    color: #c049ef;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+@media(min-width:0px) and (max-width:830px){
+    .features .features-container .feature-box{
+        width: 100%;
+    }
+
+    
 }

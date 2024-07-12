@@ -172,14 +172,15 @@ main .page-content {
     gap: 40px;
 }
 
-.introduction .header .logo {
+.introduction .header .logo,.not-avilable .logo {
     text-align: center;
     font-size: 7.8vw;
     line-height: 102px;
 
 }
 
-.introduction .header .logo i {
+.introduction .header .logo i,
+.not-avilable .logo i{
     color: #c049ef;
 }
 
@@ -217,7 +218,7 @@ main .page-content {
     font-weight: bold;
 }
 
-/* fe */
+/* features */
 .features {
     padding-bottom: 50px;
 }

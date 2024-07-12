@@ -331,4 +331,7 @@ main .page-content {
     .not-avilable {
         display: flex;
     }
+    *{
+        overflow: hidden;
+    }
 }

@@ -258,11 +258,11 @@ main .page-content {
     width: calc(100% - 200px);
     height: 100%;
     overflow: auto;
-    padding: 0px 5%;
 }
 
+
 .introduction .header {
-    height: calc(100vh - 60px);
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;

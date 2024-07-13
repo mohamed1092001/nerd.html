@@ -1,0 +1,98 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: 'Cairo';
+    text-decoration: none;
+    color: #3e3e3e;
+    list-style-position: inside;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f0f0f0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* body */
+
+body {
+    padding: 40px 5%;
+}
+
+/* page title */
+
+.page-title {
+    text-align: center;
+    font-size: 6vw;
+    line-height: 102px;
+    border-bottom: solid #555;
+
+}
+
+.page-title i {
+    color: #c049ef;
+}
+
+.exemples-container {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.exemple {
+    border: 1px solid transparent;
+    box-shadow: 0 1px 5px 1px rgba(64, 60, 67, .16);
+    border-radius: 5px;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+
+
+.exemple .shape-name{
+    text-transform: capitalize;
+}
+
+.exemple .shape-description{
+    line-height: 20px;
+}
+
+.exemple .copy-btns{
+    display: flex;
+    gap: 10px;
+}
+
+.exemple .copy-btns button{
+    padding: 5px 10px;
+    border-radius: 3px;
+    text-transform: capitalize;
+    font-size: 16px;
+    box-shadow: 0px 0px 3px #0000003f;
+}
+
+
+.exemple .copy-btns button:hover{
+    background-color: #c049ef;
+    color: #fff;
+}

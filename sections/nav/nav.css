@@ -43,7 +43,6 @@ body {
     text-align: center;
     font-size: 6vw;
     line-height: 102px;
-    border-bottom: solid #555;
 
 }
 
@@ -52,7 +51,7 @@ body {
 }
 
 .exemples-container {
-    margin-top: 40px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -70,20 +69,20 @@ body {
 
 
 
-.exemple .shape-name{
+.exemple .shape-name {
     text-transform: capitalize;
 }
 
-.exemple .shape-description{
+.exemple .shape-description {
     line-height: 20px;
 }
 
-.exemple .copy-btns{
+.exemple .copy-btns {
     display: flex;
     gap: 10px;
 }
 
-.exemple .copy-btns button{
+.exemple .copy-btns button {
     padding: 5px 10px;
     border-radius: 3px;
     text-transform: capitalize;
@@ -93,7 +92,7 @@ body {
 }
 
 
-.exemple .copy-btns button:hover{
+.exemple .copy-btns button:hover {
     background-color: #c049ef;
     color: #fff;
 }
